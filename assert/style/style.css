@@ -9,6 +9,7 @@
     border: none;
     outline: none;
 }
+
 :root{
     --bg-color : #191919;
     --secont-bg-color : #101010;
@@ -40,4 +41,24 @@ header{
     padding: 28px 11%;
     border-bottom: 1px solid transparent;
     transition: all ease .50s;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 40px;
+    transition: all ease .40s;
+}
+
+navlist a :hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+
 }
