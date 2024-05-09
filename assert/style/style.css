@@ -83,7 +83,7 @@ section{
 }
 .home-text h3{
     color: var(--second-color);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 15px;
     word-spacing: 10px;
@@ -95,4 +95,11 @@ section{
     font-weight: 600;
     margin-bottom:20px;
     letter-spacing: 2px;
+}
+.home-text h4{
+    color: var(--second-color);
+    font-size: 15px;
+    font-weight: 600;
+    word-spacing: 15px;
+    margin-bottom: 3.5rem;
 }
