@@ -213,6 +213,22 @@ p{
     transition: all 0.4s;
     margin-bottom: 20px;
 }
+.education .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px var(--main-color);
+    border:1px solid transparent;
+}
+.education .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top :0;
+    background-color: var(--main-color);
+    border: 2px solid white;
+}
+
 /*create experience boxes*/
 .experience .contents .box{
     position: relative;
@@ -222,4 +238,19 @@ p{
     cursor: pointer;
     transition: all 0.4s;
     margin-bottom: 20px;
+}
+.experience .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px var(--main-color);
+    border:1px solid transparent;
+}
+.experience .contents .box::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 23px);
+    top :0;
+    background-color: var(--main-color);
+    border: 2px solid white;
 }
