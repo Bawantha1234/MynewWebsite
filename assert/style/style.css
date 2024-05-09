@@ -178,3 +178,14 @@ p{
     background: transparent;
     border: 2px solid var(--main-color);
 }
+.experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 100%;
+    padding: 35px 5%;
+}
+
+#Edu{
+    font-family:'Dosis',sans-serif;
+}
