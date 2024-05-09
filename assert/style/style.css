@@ -150,3 +150,10 @@ header.sticky{
     margin-bottom: 20px;
     line-height: 1.4;
 }
+span{
+    color: var(--main-color);
+}
+
+.about-text p{
+
+}
