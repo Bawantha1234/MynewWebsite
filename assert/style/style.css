@@ -43,11 +43,11 @@ header{
     transition: all ease .50s;
 }
 
-.navlist{
+.navigation{
     display: flex;
 }
 
-.navlist a{
+.navigation a{
     color: var(--second-color);
     font-size: var(--p-font);
     font-weight: 600;
@@ -55,10 +55,14 @@ header{
     transition: all ease .40s;
 }
 
-navlist a :hover{
-    color: var(--main-color);
+.navigation a :hover{
+    color: #e9204f;
 }
 
 #menu-icon{
-
+    font-size: 42px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
 }
