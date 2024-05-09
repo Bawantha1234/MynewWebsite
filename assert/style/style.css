@@ -121,23 +121,27 @@ section{
     border: 2px solid var(--main-color);
 }
 
-header.sticky{
-    padding: 15px 11%;
-    background: #000;
-    border-bottom: 1px solid #4e5055;
-}
-
 /* About page*/
 
 .about{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px,auto));
-    align-items: center;
-    gap: 4rem;
+    width: 100%;
+    padding: 78px 0px;
+    background-color:#191919;
 }
 .about-img img{
-    width: 120%;
+    width: 420px;
     height: auto;
+}
+.about-text{
+    width: 550px;
+}
+.about-me{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .about-text h2{
     font-family: 'Dosis',sans-serif;
@@ -153,10 +157,24 @@ header.sticky{
 span{
     color: var(--main-color);
 }
-
-.about-text p{
+p{
+    position: relative;
     color: var(--other-color);
     font-size: var(--p-font);
     line-height: 30px;
-    margin-bottom: 3rem;
+}
+.btn-hireme{
+    display: inline-block;
+    padding: 16px 45px;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    border: 2px solid var(--main-color);
+    transition: all ease .50s;
+}
+.btn-hireme:hover{
+    transform: translateX(5px);
+    background: transparent;
+    border: 2px solid var(--main-color);
 }
