@@ -139,3 +139,9 @@ header.sticky{
     width: 120%;
     height: auto;
 }
+.about-text h2{
+    font-family: 'Dosis',sans-serif;
+    font-size: var(--h2-font);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
