@@ -88,3 +88,11 @@ section{
     margin-bottom: 15px;
     word-spacing: 10px;
 }
+.home-text h1{
+    font-family: 'Dosis',sans-serif;
+    font-size: 60px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom:20px;
+    letter-spacing: 2px;
+}
