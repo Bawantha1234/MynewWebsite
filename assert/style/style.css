@@ -77,4 +77,14 @@ section{
     background-image: url("../../assert/img/background.jpg");
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home-text h3{
+    color: var(--second-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
 }
