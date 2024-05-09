@@ -66,3 +66,15 @@ header{
     cursor: pointer;
     display: none;
 }
+
+section{
+    padding: 120px 19% 100px;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("../../assert/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
