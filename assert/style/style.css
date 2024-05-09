@@ -28,6 +28,8 @@ body{
     background: var(--bg-color);
 }
 
+/* Home page*/
+
 header{
     position: fixed;
     top: 0;
@@ -117,4 +119,19 @@ section{
     transform: translateX(5px);
     background: transparent;
     border: 2px solid var(--main-color);
+}
+
+header.sticky{
+    padding: 15px 11%;
+    background: #000;
+    border-bottom: 1px solid #4e5055;
+}
+
+/* About page*/
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,auto));
+    align-items: center;
+    gap: 4rem;
 }
