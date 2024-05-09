@@ -411,3 +411,18 @@ p{
          width: 60%;
      }
 }
+
+
+/*Media Quaries*/
+
+@media (max-width: 1600px) {
+    header{
+        padding: 14px 4%;
+    }
+    header.sticky{
+        padding: 8px 4%;
+    }
+    section{
+        padding: 100px 5% 80px;
+    }
+}
