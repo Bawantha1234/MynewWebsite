@@ -178,6 +178,8 @@ p{
     background: transparent;
     border: 2px solid var(--main-color);
 }
+
+/* Experience page */
 .experience{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -185,7 +187,39 @@ p{
     width: 100%;
     padding: 35px 5%;
 }
-
 #Edu{
     font-family:'Dosis',sans-serif;
+    padding-bottom: 10px;
+}
+#Exp{
+    font-family:'Dosis',sans-serif;
+    padding-bottom: 10px;
+}
+.education .contents{
+    padding: 0px 30px;
+    border-left: 2px solid var(--other-color);
+}
+.experience .contents{
+    padding: 0px 30px;
+    border-left: 2px solid var(--other-color);
+}
+/*create education boxes*/
+.education .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    background-color:transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+/*create experience boxes*/
+.experience .contents .box{
+    position: relative;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    background-color:transparent;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
 }
