@@ -9,6 +9,10 @@
     border: none;
     outline: none;
 }
+html{
+    overflow-x:hidden ;
+}
+
 
 :root{
     --bg-color : #191919;
