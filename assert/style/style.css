@@ -331,6 +331,10 @@ p{
     width: 90%;
     animation: html 5s;
 }
+
+/*projects page*/
+
+
 @keyframes html {
     0%{
         width: 0%;
