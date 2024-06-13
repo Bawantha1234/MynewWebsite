@@ -32,8 +32,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li> <!-- Add Education-->
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#assignments">Assignment</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
@@ -223,12 +222,11 @@
         </div>
     </section>
 
-    <!--projects section-->
+    <!--assignments section-->
     <section id="assignments" class="assignments">
         <div class="topic">
             <div class="content">
-                <h2>Assignments</h2>
-                <h2>Assignments</h2>
+                <h2 id="Ass"><span>My</span> Assignments</h2>
             </div>
         </div>
 
@@ -238,6 +236,7 @@
                     <div data-aos="zoom-in-up" class="col" ontouchstart="this.classList.toggle('hover');">
                         <div class="container">
                             <div class="front">
+
                                 <!--style="background-image: url(assert/assignments/assignment-1/assert/img/Banner.png)">-->
                                 <div class="inner">
                                     <p>Assignment 1</p>
@@ -255,7 +254,9 @@
                     </div>
                     <div data-aos="zoom-in-up" class="col" ontouchstart="this.classList.toggle('hover');">
                         <div class="container">
-                            <div class="front"><!--style="background-image: url(assert/img/scrolling-assignment.PNG)-->
+                            <div class="front">
+
+                                <!--style="background-image: url(assert/img/scrolling-assignment.PNG)-->
                                 <div class="inner">
                                     <p>Assignment 2</p>
                                     <span>Positions</span>
@@ -418,9 +419,97 @@
         </div>
 
     </section>
+
+    <!--contact section-->
+    <section id="contact" class="contact">
+        <div>
+            <div class="topic">
+                <div class="content">
+                    <h2>Contact</h2>
+                    <h2></h2>
+                </div>
+            </div>
+
+            <div class="root page-1 page-first" role="dialog">
+                <div class="container">
+                    <div class="body">
+                        <div class="content">
+                            <h1 class="title">
+                                <div>Making a change starts with one conversation</div>
+                            </h1>
+                            <p class="description">
+                            <div>Fill in the form below to book a consultation with me.</div>
+                            </p>
+                            <form novalidate="" class="form valid pristine" name="contactForm">
+                                <div class="fields">
+                                    <div class="field text first with-label valid"><label class="field-title" for="name">
+                                        <div>Name</div>
+                                    </label><input id="name" class="input-text" required="" type="text" name="name"
+                                                   placeholder="Enter your name">
+                                    </div>
+                                    <div class="field email with-label valid"><label class="field-title" for="email">
+                                        <div>Email</div>
+                                    </label><input id="email" class="input-text" required="" type="email" name="email"
+                                                   placeholder="Enter your email"></div>
+                                    <div class="field text last with-label valid"><label class="field-title" for="phone">
+                                        <div>Phone number</div>
+                                    </label><input id="phone" class="input-text" required="" type="text" name="phone"
+                                                   placeholder="+94 XX XXX XXXX"></div>
+                                    <div class="field text last with-label valid">
+                                        <label class="field-title" for="message">
+                                            <div>Message</div>
+                                        </label>
+                                        <textarea id="message" placeholder="Message" class="field"
+                                                  name="message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <button type="submit" class="button primary magic-hover magic-hover__square"
+                                            onclick="sendEmail(event)"><span>BOOK A CALL</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button type="button" class="close"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!--custom js file link-->
     <script src="../assert/js/script.js"></script>
     <script src="../assert/lib/jquery-3.7.1.js"></script>
 </body>
+
+<!--footer section-->
+<footer>
+    <div class="footer">
+        <div class="row">
+            <a href="https://web.facebook.com/PASINDU.T.B" target="_blank"><i class="bx bxl-facebook"></i></a>
+            <a href="https://wa.me/+94787149579" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.linkedin.com/in/pasindu-tb" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/pasindusampath" target="_blank"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <div class="row">
+            <ul>
+                <li><a href="#home-section">Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Projects</a></li>
+                <li><a>Assignments</a></li>
+                <li><a>Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="row">
+            Copyright © 2023 All rights reserved || Designed By: Bawantha Bandara
+        </div>
+    </div>
+</footer>
+
+
+
 </html>
 
