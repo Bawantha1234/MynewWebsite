@@ -481,6 +481,28 @@
     <!--custom js file link-->
     <script src="../assert/js/script.js"></script>
     <script src="../assert/lib/jquery-3.7.1.js"></script>
+
+    <!--send Email function-->
+    <script>
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var message = document.getElementById('message').value;
+
+            var subject = "New contact form submission";
+            var body = "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage: " + message;
+
+            var mailtoLink = "mailto:bandarabawantha9@gmail.com" +
+                "?subject=" + encodeURIComponent(subject) +
+                "&body=" + encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        }
+    </script>
+
 </body>
 
 <!--footer section-->
@@ -508,8 +530,6 @@
         </div>
     </div>
 </footer>
-
-
 
 </html>
 
