@@ -332,7 +332,7 @@ p{
     animation: html 5s;
 }
 
-/*projects page*/
+/*assignment page*/
 
 .wrapper{
     width: 90%;
@@ -381,7 +381,7 @@ p{
 .front,
 .back{
     background-size: cover;
-    box-shadow: 0 4px 8px 0 rgb(3 49 76 / 95%);
+    box-shadow: 0 4px 8px 0 rgb(21, 21, 21);
     border-radius: 10px;
     background-position: center;
     -webkit-transition: -webkit-transform .7s cubic-bezier(0.4, 0.2, 0.2, 1);
@@ -402,7 +402,7 @@ p{
     /*background: linear-gradient(136deg, black, gray,blue);*/
 
     /* background-image: linear-gradient(327deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
-    background-image: linear-gradient(to right, #141e30, #243b55);
+    background-image: linear-gradient(to right, #e71972, rgba(49, 50, 51, 0.95));
 }
 
 .back{
@@ -441,7 +441,7 @@ p{
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(43deg, #a20f4f 0%, #3c3d3b 66%, #151515 100%);
+    background: linear-gradient(43deg, #151515 0%, #3c3d3b 66%, #151515 100%);
 }
 
 
@@ -515,8 +515,8 @@ p{
 
 .front .inner span{
     color: rgba(255,255,255,0.7);
-    font-family: 'Montserrat';
-    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
 }
 
 .items_in_card>li::marker {
@@ -530,21 +530,17 @@ p{
 .items_in_card>li>a,.inner>p{
     all: unset;
     color: lightyellow;
-    font-family: Bad Script;
-    text-shadow:
-            0 0 10px yellow,
-            0 0 20px orange,
-            0 0 40px brown,
-            0 0 80px purple;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
     will-change: filter, color;
     filter: saturate(60%);
 }
 
 .items_in_card>li>a:hover{
     text-shadow:
-            0 0 10px #f6f66e,
-            0 0 20px #f8c666,
-            0 0 40px #f67878,
+            0 0 10px #ff00ce,
+            0 0 20px #d721ac,
+            0 0 40px #ee3d8d,
             0 0 80px #e862e8;
 }
 
@@ -564,7 +560,7 @@ p{
 }
 .inner>a>button {
     position: relative;
-    color: #00aced;
+    color: #ffffff;
     border: none;
     z-index: 2;
 }
@@ -583,23 +579,23 @@ p{
     left: 0;
     border-bottom-color: transparent;
     border-right-color: transparent;
-    border-top-color: #00aced;
-    border-left-color: #00aced;
+    border-top-color: #a20f4f;
+    border-left-color: #a20f4f;
 }
 .inner>a>button:after{
     bottom: 0;
     right: 0;
     border-top-color: transparent;
     border-left-color: transparent;
-    border-bottom-color: #00aced;
-    border-right-color: #00aced;
+    border-bottom-color: #a20f4f;
+    border-right-color: #a20f4f;
 }
 .inner>a>button:hover:before,
 .inner>a>button:hover:after {
-    border-color: #00aced;
+    border-color: #a20f4f;
     height: 100%;
     width: 100%;
-    box-shadow: 0 0 5px #00aced, 0 0 5px #00aced inset;
+    box-shadow: 0 0 5px #a20f4f, 0 0 5px #a20f4f inset;
 }
 
 
