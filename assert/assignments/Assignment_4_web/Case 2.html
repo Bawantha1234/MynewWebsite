@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link rel="stylesheet" href="assert/normalize.css">
+    <link rel="stylesheet" href="assert/fontawesome/css/all.css">
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            background-color: gray;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        div>h3{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            color: white;
+        }
+
+        div::before{
+            content: "";
+            border: 10px solid white;
+            border-top-color: red;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+        div:hover::before{
+            transform: rotate(360deg);
+            transition-duration: 3s;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body style="background-color: darkslateblue">
+
+
+<div>
+    <h3>RWAD</h3>
+</div>
+
+<div></div>
+
+<a href="Case 3.html">Next</a>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment-04-case-05</title>
+</head>
+<style>
+  main{
+    width:50vw;
+    height: 50vh;
+    border:5px solid red;
+    margin:auto;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    position: absolute;
+
+    overflow: hidden;
+
+  }
+  section{
+    width:200vw                  ;
+    display:flex;
+    animation-name: anime1;
+    animation-duration: 3s;
+    animation-direction: alternate;
+
+  }
+
+  @keyframes anime1{
+    0%,20%{
+      transform: translateX(0%);
+    }
+    25%,45%{
+      transform: translateX(-25%);
+    }
+    50%,70%{
+      transform: translateX(-50%);
+    }
+    75%,100%{
+      transform: translateX(-75%);
+
+    }
+
+
+  }
+  section>div{
+    width:50vw;
+    height:50vh;
+    background-color:#5582ae;
+    border:2px solid lightgreen;
+
+  }
+  section>div:first-child{
+    background-image: url("assets/slide1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+
+  }
+  section>div:nth-child(2){
+    background-image: url("assets/slide2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+
+  }
+  section>div:nth-child(3){
+    background-image: url("assets/slide3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+  }
+  section>div:nth-child(4){
+    background-image: url("assets/slide4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+  }
+
+</style>
+<body>
+<main>
+  <section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+</main>
+<a href="Case 6.html">Next</a>
+
+</body>
+</html>

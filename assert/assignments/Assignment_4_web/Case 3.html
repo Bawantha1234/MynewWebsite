@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-04-case-03</title>
+    <style>
+        :root{
+            --width:200px;
+            --height:100px;
+        }
+        div{
+            width:var(--width);
+            height:var(--height);
+            background-color: mediumpurple;
+            border-radius: 10px;
+            animation-name: animi;
+            animation-duration:5s ;
+            animation-timing-function:linear ;
+            animation-direction:alternate ;
+            animation-iteration-count: infinite;
+        }
+        @keyframes animi {
+
+
+            0% {
+                margin-left: 0;
+                margin-top:0;
+                transform:rotate(0deg);
+
+            }
+            25%{
+                margin-left: calc(100vw - var(--width));
+                margin-top:0;
+                background-color: deepskyblue;
+                transform: rotate(180deg);
+            }
+            50%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                background-color: #bb598a;
+                transform: rotate(0deg);
+
+            }
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - var(--height));
+                background-color: #ff253a;
+                transform: rotate(-180deg);
+
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<a href="Case 4.html">Next</a>
+
+
+</body>
+</html>
