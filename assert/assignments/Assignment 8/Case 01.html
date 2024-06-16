@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case1</title>
+  <link rel="stylesheet" href="assert/style/normalize.css">
+  <style>
+    .container{
+      display: flex;
+      position: relative;
+      top: 200px;
+      left: 50px;
+    }
+    html{
+      overflow-x: hidden;
+    }
+    .home img{
+      position: relative;
+      top: -90px;
+    }
+    .home{
+      position: relative;
+      right: -85px;
+    }
+    .topic{
+      color: #343132;
+      font-size: 40px;
+      width: fit-content;
+      position: relative;
+      right: 0;
+      left: 0;
+      top: 100px;
+      margin: auto;
+    }
+    .button>button{
+      position: relative;
+      top: 600px;
+      width: 100px;
+      height: 50px;
+      background-color: #323238;
+      font-weight: bolder;
+      left: 800px;
+      color:white;
+      margin-right: 30px;
+      border-radius: 20px;
+      box-shadow: 5px 5px 30px #3d3d41;
+    }
+    h2{
+      color: #3d3d41;
+    }
+    .home{
+      top:50px;
+      position: absolute;
+      width:300px;
+      height:200px;
+      right:250px;
+    }
+    .walking-girl{
+      top:100px;
+      position:relative;
+      width:200px;
+      height:100px;
+      display: inline-flex;
+      margin-right:20px ;
+    }
+    a{
+      border-radius: 20px ;
+      text-decoration: none;
+      text-align: center;
+      bottom:50px;
+      right:100px;
+      position:absolute;
+      width:100px;
+      height:30px;
+      background-color: #3d3d41;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<h1 class="topic">JS QUE</h1>
+<section class="container">
+  <div id="value1" class="walking-girl">
+    <h2>A</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div id="value2" class="walking-girl">
+    <h2>B</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div id="value3" class="walking-girl">
+    <h2>C</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div id="value4" class="walking-girl">
+    <h2>D</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div id="value5" class="walking-girl">
+    <h2>E</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div id="value6" class="walking-girl">
+    <h2>F</h2>
+    <img src="assert/video/tenor.gif" alt="gif" width="150px" height="150px">
+  </div>
+  <div class="home">
+    <img src="assert/video/8ixrEzkbT.gif" alt="gif" width="400" height="300">
+  </div>
+
+</section>
+<div class="button">
+  <button id="start" type="button">Start</button>
+  <button id="Stop" type="button">Stop</button>
+</div>
+<a href="case 02.html">Next</a>
+
+<script src="assert/lib/jquery-3.7.1.min.js"></script>
+<script>
+  var array =["A","B","C","D","E","F"] ;
+  function replace(){
+    let lastValue = array.pop();
+    array.unshift(lastValue);
+
+    $("#value1>h2 ").text(array[0]);
+    $("#value2>h2").text(array[1]);
+    $("#value3>h2").text(array[2]);
+    $("#value4>h2").text(array[3]);
+    $("#value5>h2").text(array[4]);
+    $("#value6>h2").text(array[5]);
+  }
+  var myInterval;
+  $("#start").on("click",function (){
+    myInterval = setInterval(replace,2000);
+
+  });
+
+  $("#Stop").click(function (){
+    clearInterval(myInterval);
+  });
+
+</script>
+</body>
+</html>

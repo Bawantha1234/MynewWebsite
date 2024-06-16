@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 5</title>
+    <link rel="stylesheet"href="assert/normalize.css">
+    <style>
+        section{
+            width: 1000px;
+            height: 500px;
+            display: grid;
+            /*grid-template-columns: 1fr 1fr 1fr;*/
+            /*grid-template-rows: 1fr 1fr;*/
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        section>div{
+            border: 1px solid green;
+            background-color:white;
+        }
+        section>div:nth-child(1){
+            background-color: red;
+        }  section>div:nth-child(2){
+               background-color: green;
+           }  section>div:nth-child(3){
+                  background-color: orangered;
+              }  section>div:nth-child(4){
+                     background-color: purple;
+                 }  section>div:nth-child(5){
+                        background-color: deeppink;
+                    }  section>div:nth-child(6){
+                           background-color: blue;/*grid-row: 2/4;*/
+                       }  section>div:nth-child(7){
+                              background-color: brown;
+                          }  section>div:nth-child(8){
+                                 background-color: mediumpurple;
+                             }  section>div:nth-child(9){
+                                    background-color: rebeccapurple;
+                                }  section>div:nth-child(10){
+                                       background-color: yellow;
+                                   }  section>div:nth-child(11){
+                                          background-color:darkseagreen;
+                                      }  section>div:nth-child(12){
+                                             background-color: aqua;
+                                         }
+    </style>
+</head>
+<body>
+<section>
+    <div id="1"></div>
+    <div id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+    <div id="6"></div>
+    <div id="7"></div>
+    <div id="8"></div>
+    <div id="9"></div>
+    <div id="10"></div>
+    <div id="11"></div>
+    <div id="12"></div>
+
+
+</section>
+
+<a href="Case 6.html">Next</a>
+
+</body>
+</html>

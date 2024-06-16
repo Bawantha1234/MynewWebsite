@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case2</title>
+  <style>
+    .line1 {
+      border-top: 5px solid #ffffff; /* Style for first horizontal line */
+      margin-bottom: 80px; /* Optional margin for spacing */
+      color: white;
+    }
+    .container{
+
+      position: absolute;
+      height: fit-content;
+      width: 60vw;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+
+    }
+    body{
+      background-color: rgba(12, 12, 22, 0.91);
+    }
+    .box{
+
+      color: white;
+      background-color: white;
+      width: 100px;
+      height: 50px;
+      border-radius: 10px;
+      border: 3px solid White;
+      margin-right: 30px;
+
+    }
+    .box-container{
+
+      display: flex;
+      position: relative;
+      top: 5px;
+      left: 170px;
+      margin-right: 50px;
+
+    }
+    #box1{
+      left:-50px;
+      position: relative;
+      top: -150px;
+    }
+    #box6{
+      left:50px;
+
+      position: relative;
+      top: 70px;
+
+    }
+    .btn>button{
+      background-color: #343436;
+      color: White;
+      position: relative;
+      top: 700px;
+      width: 150px;
+      height: 50px;
+      left: 40vw;
+      font-weight: bolder;
+      margin-right: 30px;
+      border-radius: 20px;
+    }
+    a{
+      border:2px solid white;
+      border-radius: 20px ;
+      text-decoration: none;
+      text-align: center;
+      bottom:50px;
+      right:100px;
+      position:absolute;
+      width:100px;
+      height:30px;
+      background-color: #3d3d41;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+<script src="assert/lib/jquery-3.7.1.min.js"></script>
+<section class="container">
+  <hr class="line1">
+  <section class="box-container">
+    <div id="box1" class="box" style="background-color: #f41616"></div>
+    <div id="box2" class="box" style="background-color: #19dc19"></div>
+    <div id="box3" class="box" style="background-color: #2121d1"></div>
+    <div id="box4" class="box" style="background-color: #ddf21e"></div>
+    <div id="box5" class="box" style="background-color: #ea23ea"></div>
+    <div id="box6" class="box" style="background-color: #fb881c"></div>
+
+  </section>
+  <hr class="line1">
+
+</section>
+<div class="btn">
+  <button id="start" type="button">Start</button>
+  <button id="Stop" type="button">Stop</button>
+</div>
+<a href="Case 01.html">Back</a>
+
+<script>
+  var colors = ["#f41616", "#19dc19", "#2121d1", "#ddf21e", "#ea23ea", "#fb881c"];
+  function changeColor(){
+    let lastValue = colors.pop();
+    colors.unshift(lastValue);
+
+    $("#box1").css( "background-color",colors[0]);
+    $("#box2").css( "background-color",colors[1]);
+    $("#box3").css( "background-color",colors[2]);
+    $("#box4").css( "background-color",colors[3]);
+    $("#box5").css( "background-color",colors[4]);
+    $("#box6").css( "background-color",colors[5]);
+
+  }
+  var myInterval;
+  $("#start").on("click",function (){
+    myInterval = setInterval(changeColor,1000);
+
+  });
+
+  $("#Stop").click(function (){
+    clearInterval(myInterval);
+  });
+
+</script>
+</body>
+
+</html>
